@@ -95,6 +95,7 @@ class _AutoScaleTabBarViewState extends State<AutoScaleTabBarView> {
   void didChangeDependencies() {
     super.didChangeDependencies();
     _updateTabController();
+    _updateChildren();
     _currentIndex = _controller?.index;
     _pageController = PageController(initialPage: _currentIndex ?? 0);
   }
